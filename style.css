@@ -162,6 +162,7 @@ footer {
 
     main {
         padding: 0 70px;
+        align-items: stretch;
     }
 
     .img-con {
@@ -187,7 +188,7 @@ footer {
 
 @media screen and (min-width: 1440px) {
     header {
-        padding: 49px 100px;
+        padding: 49px 90px;
     }
 
     .logo {
@@ -196,7 +197,7 @@ footer {
 
     main {
         margin: 50px 0 10px;
-        padding: 0 100px;
+        padding: 0 90px;
         gap: 0;
     }
 
@@ -205,7 +206,7 @@ footer {
     }
 
     .heading {
-        font-size: 38px;
+        font-size: 45px;
     }
 
     .para {
@@ -219,7 +220,7 @@ footer {
     }
 
     footer {
-        padding: 10px 100px 30px;
+        padding: 10px 90px 30px;
     }
 
     .link {
