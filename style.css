@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url('/images/bg-mobile.svg') no-repeat top right / contain, var(--violet);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    padding: 29px 35px;
+}
+
+.logo {
+    display: block;
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    margin: 30px 0;
+    padding: 0 35px;
+}
+
+.img-con {
+    flex: 2;
+    margin: 0;
+}
+
+.main-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+article {
+    flex: 1;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(300, 33%, 92%);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.para {
+    color: hsl(300, 33%, 92%);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    width: 210px;
+    margin: 25px auto;
+    background-color: hsl(300, 33%, 92%);
+    color: var(--violet);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 25px;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--softMagenta);
+    color: hsl(300, 33%, 92%);
+}
+
+footer {
+    text-align: center;
+    padding: 5px 35px 35px;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid hsl(300, 33%, 92%);
+    border-radius: 50%;
+    color: hsl(300, 33%, 92%);
+    margin-left: 5px;
+    padding: 4px 7px;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+.link:hover {
+    color: var(--softMagenta);
+    border: 1px solid var(--softMagenta);
+}
+
+@media screen and (min-width: 780px) {
+    body {
+        background: url('/images/bg-desktop.svg') no-repeat top left / cover,
+            var(--violet);
+    }
+
+    header {
+        padding: 29px 50px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .heading {
+        text-align: start;
+    }
+
+    .para {
+        text-align: start;
+    }
+
+    .btn {
+        width: 160px;
+        margin: 25px 0;
+    }
+
+    footer {
+        text-align: end;
+        padding: 10px 50px 35px;
+    }
+
+    .link {
+        margin-left: 8px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    main {
+        padding: 0 70px;
+    }
+
+    .img-con {
+        flex: 1.5;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 17px;
+    }
+
+    footer {
+        padding: 10px 70px 35px;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 29px 100px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    main {
+        padding: 0 100px;
+    }
+
+    .img-con {
+        flex: 1.5;
+    }
+
+    .heading {
+        font-size: 38px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 180px;
+        padding: 12px 0;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 10px 100px 35px;
+    }
+
+    .link {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
